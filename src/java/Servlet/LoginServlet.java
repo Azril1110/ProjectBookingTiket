@@ -23,27 +23,19 @@ public class LoginServlet extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException, SQLException {
 
-        String email = request.getParameter("email");
         String Uname = request.getParameter("username");
         String Pname = request.getParameter("password");
 
         HttpSession session = request.getSession();
 
-        if (!email.matches("^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$")) {
-            session.setAttribute("error", "Format email salah.");
-            response.sendRedirect("login.jsp");
-            return;
-        }
-
         try {
             DbConnection cnc = new DbConnection();
             conn = cnc.driverConnect();
 
-            String sql = "SELECT * FROM user WHERE email=? AND username=? AND password=? AND status='ACTIVE'";
+            String sql = "SELECT * FROM user WHERE username=? AND password=? AND status='ACTIVE'";
             stmt = conn.prepareStatement(sql);
-            stmt.setString(1, email);
-            stmt.setString(2, Uname);
-            stmt.setString(3, Pname);
+            stmt.setString(1, Uname);
+            stmt.setString(2, Pname);
 
             rs = stmt.executeQuery();
 

@@ -1,0 +1,46 @@
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #2c3e50, #bdc3c7);
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        
+        .navbar-custom {
+            background-color: #343a40; /* Ubah transparansi di sini */
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Batas bawah dengan sedikit transparansi */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Bayangan navbar */
+        }
+        
+        .navbar-custom .navbar-brand,
+        .navbar-custom .navbar-nav .nav-link {
+            color: #fff; /* Warna teks putih */
+            font-weight: bold;
+        }
+        
+        .navbar-custom .navbar-nav .nav-link:hover {
+            color: #007bff;
+        }
+        
+        .navbar-custom .navbar-toggler {
+            border-color: rgba(255, 255, 255, 0.5); /* Warna border toggle */
+        }
+        
+        .navbar-custom .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 255, 255, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        }
+        
+        .btn-partnership {
+            background-color: #ffd700;
+            color: #000;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            font-weight: bold;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        
+        .btn-partnership:hover {
+            background-color: #ffcf33;
+           
+        }

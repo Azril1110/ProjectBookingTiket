@@ -1,0 +1,55 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 4 Jul 2024, 12.51.47
+    Author     : admin
+*/
+
+  body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+
+        .confirmation-card {
+            background: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 50px auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .confirmation-card h5 {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .confirmation-card p {
+            font-size: 18px;
+            color: #555;
+        }
+
+        .confirmation-card .virtual-account {
+            font-size: 22px;
+            font-weight: bold;
+            color: #007bff;
+        }
+
+        .btn-confirm {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            padding: 10px 20px;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .btn-confirm:hover {
+            background-color: #0056b3;
+        }
